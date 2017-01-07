@@ -10,6 +10,8 @@
       {% endif %}
     </title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/html.css">
+    <link rel="stylesheet" href="/css/posts.css">
   </head>
   <body>
     <div class="content">

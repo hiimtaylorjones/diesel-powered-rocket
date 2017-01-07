@@ -1,18 +1,3 @@
-body {
-  margin-left: 20%;
-  margin-right: 20%;
-
-  font-family: Arial;
-  background: rgba(248,80,50,1);
-  background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 4%, rgba(246,41,12,1) 32%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(4%, rgba(241,111,92,1)), color-stop(32%, rgba(246,41,12,1)), color-stop(71%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
-  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 4%, rgba(246,41,12,1) 32%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-  background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 4%, rgba(246,41,12,1) 32%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-  background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 4%, rgba(246,41,12,1) 32%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-  background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 4%, rgba(246,41,12,1) 32%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
-}
-
 .content {
   background: white;
 }
@@ -24,16 +9,4 @@ body {
 .inner-content a {
   margin-top: 1.5%;
   margin-bottom: 1.5%;
-}
-
-.post {
-  margin: 10px;
-}
-
-h2 {
-  font-size: 2.0em;
-}
-
-h3 {
-  font-size: 1.7em;
 }
