@@ -1,6 +1,9 @@
 CREATE TABLE posts (
-  id SERIAL PRIMARY KEY,
-  title VARCHAR NOT NULL,
-  body TEXT NOT NULL,
-  published BOOLEAN NOT NULL DEFAULT 'f'
-)
+  id BIGSERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL
+);
+
+INSERT INTO posts (title, body) VALUES
+  ('First Post', 'This is my first post'),
+  ('Second Post', 'This is my second post');
