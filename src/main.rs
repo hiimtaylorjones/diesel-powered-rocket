@@ -25,6 +25,15 @@ fn index() -> Template {
     Template::render("index", &context)
 }
 
+#[get("/blog")]
+fn blog() -> Template {
+    let connection = connection();
+    let posts = posts::table.load::<Post>(&connection)
+        .expect("Failed to load posts");
+    let context = map!["posts" => posts];
+    Template::render("blog", &context)
+}
+
 #[get("/meetups")]
 fn meetups() -> Template {
     let connection = connection();
@@ -96,7 +105,7 @@ fn update_post(id: i64, post_data: Form<PostForm>) -> Redirect {
 
 fn main() {
     rocket::ignite().mount("/",
-        routes![index, new_post, create_post,
+        routes![index, blog, new_post, create_post,
             delete_post, edit_post, update_post,
             meetups, projects, static_files::all]
         ).launch();
