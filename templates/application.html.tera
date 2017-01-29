@@ -15,8 +15,14 @@
   </head>
   <body>
     <div class="content">
-      <div class="inner-content">
-        <h1><a href="/">NAVBAR</a></h1>
+      <img src="/images/rust-logo.png" class="main-logo"></img>
+      <h1><a href="/" id="main-title">Orlando.rs</a></h1>
+      <div class="navbar">
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/meetups">Meetups</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
       </div>
     </div>
 
