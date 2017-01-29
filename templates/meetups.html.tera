@@ -1,4 +1,4 @@
 {% extends "application.html.tera" %}
 {% block content %}
-  <h1>Projects</h1>
+  <h1>Meetups</h1>
 {% endblock content %}

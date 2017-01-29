@@ -25,6 +25,20 @@ fn index() -> Template {
     Template::render("index", &context)
 }
 
+#[get("/meetups")]
+fn meetups() -> Template {
+    let connection = connection();
+    let context = map!["title" => "Meetups"];
+    Template::render("meetups", &context)
+}
+
+#[get("/projects")]
+fn projects() -> Template {
+    let connection = connection();
+    let context = map!["title" => "Projects"];
+    Template::render("projects", &context)
+}
+
 #[get("/posts/new")]
 fn new_post() -> Template {
     let context = map!["title" => "New Post"];
@@ -81,5 +95,9 @@ fn update_post(id: i64, post_data: Form<PostForm>) -> Redirect {
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index, new_post, create_post, delete_post, edit_post, update_post, static_files::all]).launch();
+    rocket::ignite().mount("/",
+        routes![index, new_post, create_post,
+            delete_post, edit_post, update_post,
+            meetups, projects, static_files::all]
+        ).launch();
 }
